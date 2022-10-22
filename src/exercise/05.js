@@ -18,6 +18,7 @@ const smallBox = <div className="box box--small ">small lightblue box</div>
 const mediumBox = <div className="box box--medium">medium pink box</div>
 const largeBox = <div className="box box--large">large orange box</div>
 const Box = ({size, backgroundColor, className, style, ...otherProps}) => {
+  console.log(otherProps)
   return (
     <div
       className={`box box--${size} ${className}`}
